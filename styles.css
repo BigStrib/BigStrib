@@ -1,0 +1,17 @@
+/* Set the entire page background to black */
+body {
+    background-color: black;
+    color: white; /* Make text visible on the black background */
+    margin: 0;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;     /* Vertically center the content */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.center-content {
+    text-align: center; /* Ensure the text itself is centered */
+    word-spacing: -9px;
+}
