@@ -28,7 +28,7 @@ body {
     font-weight: bolder;
     font-style: italic;
     position: absolute; /* Position relative to .center-content */
-    top: 48%;  /* Place it directly below center-content */
+    top: 46.3%;  /* Place it directly below center-content */
     left: 50%;  /* Align it horizontally to the center */
     transform: translate(-50%, -30%); /* Move it up slightly for almost overlapping */
     z-index: 1;
