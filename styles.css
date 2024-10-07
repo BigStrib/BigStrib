@@ -1,21 +1,44 @@
-/* Set the entire page background to black */
+/* Ensure the body layout remains centered */
 body {
     background-color: black;
-    color: white; /* Make text visible on the black background */
-    margin: 0;   
-    height: 100vh; /* Ensure the body takes up the full viewport height */
+    color: white;
+    margin: 0;
+    height: 100vh;
     display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    justify-content: center; /* Center items vertically */
-    align-items: center;     /* Center items horizontally */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Center content style */
 .center-content {
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center; /* Center the text */
+    text-align: center;
     word-spacing: -12px;
+    position: relative; /* Set relative to make it a reference for positioning */
+    z-index: 1;
+    padding-bottom: 20px; /* Give some space for overlap */
+}
+
+/* Projects title that will appear close to center-content */
+.projects-title {
+    font-size: 20px;
+    letter-spacing: 8px;
+    font-weight: bolder;
+    font-style: italic;
+    position: absolute; /* Position relative to .center-content */
+    top: 46%;  /* Place it directly below center-content */
+    left: 50%;  /* Align it horizontally to the center */
+    transform: translate(-50%, -30%); /* Move it up slightly for almost overlapping */
+    z-index: 1;
+}
+
+/* Projects section will remain below without excessive margin */
+.projects {
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
 }
 
 /* Blinking dot style */
@@ -29,48 +52,26 @@ body {
     }
 }
 
-/* Projects section style */
-.projects {
-    margin-top: 1px; /* Adjust margin as needed */
-    font-size: 16px;
-}
-
-.projects-title {
-    font-size: 20px;
-    letter-spacing: 5px;
-    font-weight: bolder;
-    padding-bottom: 5px;
-}
-
-
-
 /* Basic link style */
 a {
-    color: rgb(255, 255, 255); /* Normal link color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make link text bold */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Link hover effect */
 a:hover {
-    color: rgb(102, 0, 0); /* Change color on hover */
-    text-decoration: none; /* Underline on hover */
+    color: rgb(141, 2, 2);
 }
-
 
 /* Active link style */
 a:active {
-    color: rgb(121, 0, 0); /* Color when the link is being clicked */
-}
-
-/* Style for links in buttons */
-button a {
-    color: rgb(255, 255, 255); /* Change link color in button */
+    color: rgb(121, 0, 0);
 }
 
 /* Responsive link */
 @media (max-width: 600px) {
     a {
-        font-size: 1.2em; /* Increase link size on small screens */
+        font-size: 1.2em;
     }
 }
