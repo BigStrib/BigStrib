@@ -7,11 +7,25 @@ body {
     display: flex;
     justify-content: center; /* Horizontally center the content */
     align-items: center;     /* Vertically center the content */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 
 }
 
 .center-content {
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center; /* Ensure the text itself is centered */
-    word-spacing: -9px;
+    word-spacing: -12px;
 }
+
+
+.blink {
+    animation: blink-animation 1s steps(2, start) infinite;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  
