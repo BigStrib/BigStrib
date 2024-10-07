@@ -2,30 +2,75 @@
 body {
     background-color: black;
     color: white; /* Make text visible on the black background */
-    margin: 0;
+    margin: 0;   
     height: 100vh; /* Ensure the body takes up the full viewport height */
     display: flex;
-    justify-content: center; /* Horizontally center the content */
-    align-items: center;     /* Vertically center the content */
-    
-
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center items vertically */
+    align-items: center;     /* Center items horizontally */
 }
 
+/* Center content style */
 .center-content {
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center; /* Ensure the text itself is centered */
+    text-align: center; /* Center the text */
     word-spacing: -12px;
 }
 
-
+/* Blinking dot style */
 .blink {
     animation: blink-animation 1s steps(2, start) infinite;
-  }
+}
   
-  @keyframes blink-animation {
+@keyframes blink-animation {
     to {
-      visibility: hidden;
+        visibility: hidden;
     }
-  }
-  
+}
+
+/* Projects section style */
+.projects {
+    margin-top: 1px; /* Adjust margin as needed */
+    font-size: 16px;
+}
+
+.projects-title {
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    padding-bottom: 5px;
+}
+
+
+
+/* Basic link style */
+a {
+    color: rgb(255, 255, 255); /* Normal link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make link text bold */
+}
+
+/* Link hover effect */
+a:hover {
+    color: rgb(102, 0, 0); /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Active link style */
+a:active {
+    color: rgb(121, 0, 0); /* Color when the link is being clicked */
+}
+
+/* Style for links in buttons */
+button a {
+    color: rgb(255, 255, 255); /* Change link color in button */
+}
+
+/* Responsive link */
+@media (max-width: 600px) {
+    a {
+        font-size: 1.2em; /* Increase link size on small screens */
+    }
+}
