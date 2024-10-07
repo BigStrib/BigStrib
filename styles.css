@@ -18,7 +18,7 @@ body {
     word-spacing: -12px;
     position: relative; /* Set relative to make it a reference for positioning */
     z-index: 1;
-    padding-bottom: 20px; /* Give some space for overlap */
+    padding-bottom: 34px; /* Give some space for overlap */
 }
 
 /* Projects title that will appear close to center-content */
