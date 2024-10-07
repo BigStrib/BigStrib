@@ -54,7 +54,7 @@ a {
 /* Link hover effect */
 a:hover {
     color: rgb(102, 0, 0); /* Change color on hover */
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: none; /* Underline on hover */
 }
 
 
